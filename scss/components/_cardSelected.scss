@@ -1,0 +1,39 @@
+.card-selected {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  img {
+    width: 50%;
+    padding-bottom: 25px;
+  }
+
+  .option-txt {
+    color: $orange;
+    font-size: 15px;
+    background-color: $medium-grey;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    color: $white;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    text-align: center;
+    color: $light-grey;
+    line-height: 25px;
+    opacity: 0.8;
+  }
+}
+
+.inactive {
+  display: none;
+}
+

@@ -1,0 +1,16 @@
+@media (max-width: 390px) {
+  .card {
+    max-width: 350px;
+  }
+
+  .card-rating {
+    .rating {
+      gap: 15px;
+
+      .rating-btn {
+        width: 41px;
+        height: 41px;
+      }
+    }
+  }
+}

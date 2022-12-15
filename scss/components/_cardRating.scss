@@ -1,0 +1,67 @@
+.card-rating {
+  .start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: $medium-grey;
+  }
+
+  h1 {
+    font-size: 28px;
+    padding-bottom: 15px;
+    color: $white;
+  }
+
+  p {
+    font-size: 15px;
+    color: $light-grey;
+    opacity: 0.8;
+    line-height: 25px;
+    padding-bottom: 25px;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+
+    .rating-btn {
+      color: $white;
+      background-color: $medium-grey;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      transition: 0.4s;
+      &:hover {
+        background-color: $light-grey;
+      }
+
+      &:focus {
+        background-color: $orange;
+      }
+    }
+  }
+
+  .submit {
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $orange;
+    color: $white;
+    border-radius: 20px;
+    padding-block: 13px;
+    transition: 0.4s;
+    &:hover {
+      filter: brightness(150%);
+    }
+  }
+}
