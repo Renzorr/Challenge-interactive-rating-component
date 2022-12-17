@@ -6,16 +6,13 @@ const cardSelected = document.querySelector(".card-selected");
 const optionSelected = document.querySelector(".option");
 let rating;
 
-const Toast = Swal.mixin({
+let alert = Swal.mixin({
   toast: true,
-  position: "top-end",
+  position: "top-right",
+  color: "#fb7413",
+  background: "#7c879836",
   showConfirmButton: false,
-  timer: 3000,
-  timerProgressBar: true,
-  didOpen: (toast) => {
-    toast.addEventListener("mouseenter", Swal.stopTimer);
-    toast.addEventListener("mouseleave", Swal.resumeTimer);
-  },
+  timer: 1000,
 });
 
 const animation = () => {
@@ -29,7 +26,7 @@ const animation = () => {
 
 const validateOption = () => {
   if (rating === undefined) {
-    Toast.fire({
+    alert.fire({
       icon: "error",
       title: "Select an option",
     });
