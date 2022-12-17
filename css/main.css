@@ -5,16 +5,6 @@
   font-family: "Overpass", sans-serif;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: hsl(216deg, 12%, 8%);
-  padding: 20px;
-}
-
 img,
 picture,
 video,
@@ -52,6 +42,16 @@ button {
   cursor: pointer;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(216deg, 12%, 8%);
+  padding: 20px;
+}
+
 .card {
   width: 100%;
   max-width: 410px;
@@ -61,6 +61,59 @@ button {
   margin: 20px !important;
   border-radius: 20px;
   opacity: 0;
+}
+
+.card-selected {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.card-selected img {
+  width: 42%;
+  padding-bottom: 20px;
+}
+.card-selected .option-txt {
+  color: hsl(25deg, 97%, 53%);
+  font-size: 15px;
+  background-color: rgba(124, 135, 152, 0.21);
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+.card-selected h2 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+.card-selected p {
+  font-size: 15px;
+  text-align: center;
+  color: hsl(217deg, 12%, 63%);
+  line-height: 25px;
+  opacity: 0.8;
+  padding-bottom: 18px;
+}
+.card-selected .return {
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 20px;
+  padding-block: 13px;
+  transition: 0.4s;
+}
+.card-selected .return:hover {
+  filter: brightness(150%);
+}
+
+.inactive {
+  display: none;
 }
 
 .card-rating .start {
@@ -121,41 +174,6 @@ button {
 }
 .card-rating .submit:hover {
   filter: brightness(150%);
-}
-
-.card-selected {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-.card-selected img {
-  width: 50%;
-  padding-bottom: 25px;
-}
-.card-selected .option-txt {
-  color: hsl(25deg, 97%, 53%);
-  font-size: 15px;
-  background-color: rgba(124, 135, 152, 0.21);
-  padding: 6px 14px;
-  border-radius: 20px;
-  margin-bottom: 25px;
-}
-.card-selected h2 {
-  color: hsl(0deg, 0%, 100%);
-  font-size: 25px;
-  padding-bottom: 20px;
-}
-.card-selected p {
-  font-size: 15px;
-  text-align: center;
-  color: hsl(217deg, 12%, 63%);
-  line-height: 25px;
-  opacity: 0.8;
-}
-
-.inactive {
-  display: none;
 }
 
 @media (max-width: 410px) {

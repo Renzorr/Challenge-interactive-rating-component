@@ -22,41 +22,52 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <div class="card card-rating">
-      <div class="start">
-        <img src="/images/icon-star.svg" alt="start icon" />
+    <main>
+      <div class="card card-rating">
+        <div class="start">
+          <img src="/images/icon-star.svg" alt="start icon" />
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <li class="rating">
+          <ul>
+            <button class="rating-btn" value="1">1</button>
+          </ul>
+          <ul>
+            <button class="rating-btn" value="2">2</button>
+          </ul>
+          <ul>
+            <button class="rating-btn" value="3">3</button>
+          </ul>
+          <ul>
+            <button class="rating-btn" value="4">4</button>
+          </ul>
+          <ul>
+            <button class="rating-btn" value="5">5</button>
+          </ul>
+        </li>
+        <button class="submit">Submit</button>
       </div>
-      <h1>How did we do?</h1>
-      <p>
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-
-      <div class="rating">
-        <button class="rating-btn" value="1">1</button>
-        <button class="rating-btn" value="2">2</button>
-        <button class="rating-btn" value="3">3</button>
-        <button class="rating-btn" value="4">4</button>
-        <button class="rating-btn" value="5">5</button>
+      <div class="card card-selected inactive">
+        <img
+          src="/images/illustration-thank-you.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <span class="option-txt"
+          >You selected <span class="option"></span> out of 5</span
+        >
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+        <button class="return">Return</button>
       </div>
-
-      <button class="submit">Submit</button>
-    </div>
-
-    <div class="card card-selected inactive">
-      <img
-        src="/images/illustration-thank-you.svg"
-        alt="thank you illustration"
-      />
-      <span class="option-txt"
-        >You selected <span class="option"></span> out of 5</span
-      >
-      <h2>Thank you!</h2>
-      <p>
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-      </p>
-    </div>
+    </main>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/animation.js"></script>
     <script src="/js/animation.min.js"></script>

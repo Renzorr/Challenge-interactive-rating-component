@@ -1,6 +1,7 @@
 const cardOption = document.querySelector(".card-rating");
 const btnRating = document.querySelectorAll(".rating-btn");
-const submit = document.querySelector(".submit");
+const submitBtn = document.querySelector(".submit");
+const returnBtn = document.querySelector(".return");
 const cardSelected = document.querySelector(".card-selected");
 const optionSelected = document.querySelector(".option");
 let rating;
@@ -46,6 +47,13 @@ btnRating.forEach((e) => {
   });
 });
 
-submit.addEventListener("click", validateOption);
+const returnOption = () => {
+  cardSelected.classList.add("inactive");
+  cardOption.classList.remove("inactive");
+  rating = undefined;
+  animation();
+};
 
+submitBtn.addEventListener("click", validateOption);
+returnBtn.addEventListener("click", returnOption);
 animation();

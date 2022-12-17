@@ -48,20 +48,6 @@
   }
 
   .submit {
-    letter-spacing: 2px;
-    font-weight: 500;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: $orange;
-    color: $white;
-    border-radius: 20px;
-    padding-block: 13px;
-    transition: 0.4s;
-    &:hover {
-      filter: brightness(150%);
-    }
+    @include button;
   }
 }
